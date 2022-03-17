@@ -1,0 +1,105 @@
+/*对话框风格*/
+.dev-fx-body-dialog {
+    -fx-background-color: rgba(155, 155, 155, 0.5);
+    -fx-pref-width: 360;
+    -fx-pref-height: 500;
+}
+.dev-fx-button_alertDialog{
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-border-color: rgba(100,100,100,0.5);
+}
+.dev-fx-window {
+    -fx-background-color: #00000000;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 30;
+}
+
+.dev-fx-window-min {
+    -fx-background-color: #00000000;
+    -fx-font-size: 18;
+    -fx-font-family: "Fira Code";
+    -fx-pref-width: 55;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+
+}
+
+.dev-fx-window-min:hover {
+    -fx-background-color: #4a8fa3;
+    -fx-text-fill: white; /* 字体颜色 */
+}
+
+.dev-fx-window-close {
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+    -fx-font-size: 18;
+    -fx-font-family: "Fira Code";
+    -fx-pref-width: 5;
+    -fx-pref-height: 5;
+    -fx-background-radius: 45px;
+    -fx-border-radius: 45px;   /*圆角设计*/
+    -fx-border-width: 0;
+}
+
+.dev-fx-window-close:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dev-fx-textField-input{
+    -fx-background-color: white;
+    -fx-opacity:0.5;
+    -fx-pref-height: 30;
+    -fx-pref-width: 200;
+    -fx-alignment: center;      /*组件居中*/
+    -fx-text-alignment: center; /*文字居中*/
+    -fx-font-size: 15;          /*文字大小*/
+    -fx-progress-color: white;
+    -fx-text-fill: black;        /*填充字体颜色*/
+    -fx-transition:1s;
+}
+.dev-fx-textField-input:hover{
+    -fx-pref-width: 210;
+    -fx-pref-height: 31;
+}
+/*登录界面标签设定*/
+.dev-fx-label-login{
+    -fx-pref-width: 80;
+    -fx-font-size: 15;
+    -fx-text-fill: #3d2c2c;
+    -fx-text-alignment: center;
+}
+/*消息提醒*/
+.dev-fx-message-login{
+    -fx-text-fill: #3d2c2c;
+    -fx-text-alignment: center;
+}
+
+/*登录界面button */
+.dev-fx-button_login{
+    -fx-pref-height: 30;
+    -fx-pref-width: 60;
+    -fx-text-alignment: right;
+    -fx-text-fill: white;
+    -fx-background-color: #525252;
+    -fx-opacity: 0.5;
+}
+.dev-fx-button_login:hover{
+    -fx-pref-width: 66;
+    -fx-pref-height: 33;
+    -fx-background-color: #1d1d1d;
+    -fx-opacity: 1;
+}
+/*标题字体信息*/
+.dev-fx-title-login{
+    -fx-font-size: 30;
+
+}
+/*checkbox*/
+.dev-fx-checkbox-login{
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+.dev-fx-choiceBox-login{
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}

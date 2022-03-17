@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" stylesheets="/demo/demoLogin.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.Controller">
+    <children>
+        <BorderPane layoutY="-14.0" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <bottom>
+                <AnchorPane fx:id="min" prefHeight="1081.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane fx:id="loginPanel" layoutX="1215.0" layoutY="250.0" prefHeight="780.0" prefWidth="510.0">
+                            <children>
+                                <Label fx:id="label" alignment="CENTER" blendMode="DARKEN" cache="true" layoutX="3.0" mnemonicParsing="true" opacity="0.69" prefHeight="178.0" prefWidth="510.0" text="login" textAlignment="CENTER" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Consolas Bold" size="96.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="login" layoutX="140.0" layoutY="533.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="237.0" text="确     定" />
+                                <PasswordField fx:id="pwd" alignment="CENTER" layoutX="47.0" layoutY="424.0" prefHeight="47.0" prefWidth="414.0" text="" />
+                                <TextField fx:id="id" alignment="CENTER" layoutX="47.0" layoutY="283.0" prefHeight="47.0" prefWidth="422.0" text="" />
+                                <Label layoutX="48.0" layoutY="236.0" prefHeight="24.0" prefWidth="72.0" text="账 号：">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="48.0" layoutY="382.0" prefHeight="24.0" prefWidth="72.0" text="密 码：">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" layoutX="64.0" layoutY="347.0" prefHeight="14.0" prefWidth="141.0" text="Tip:账号为对于学号" textFill="#282323cc" underline="true">
+                                    <font>
+                                        <Font name="Consolas Italic" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="forgetPwd" alignment="CENTER" layoutX="187.0" layoutY="742.0" prefHeight="32.0" prefWidth="144.0" text="找回密码" textAlignment="CENTER" textFill="#130fd0" underline="true" AnchorPane.bottomAnchor="0.0">
+                                    <font>
+                                        <Font size="19.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="780.0" fitWidth="960.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                        </ImageView>
+                        <Label alignment="CENTER" blendMode="GREEN" layoutX="72.0" layoutY="94.0" mnemonicParsing="true" text="学生选课功能一体化交互式平台" underline="true">
+                            <font>
+                                <Font name="Arial Italic" size="64.0" />
+                            </font>
+                            <effect>
+                                <Reflection />
+                            </effect>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="736.0" layoutY="1042.0" opacity="0.77" prefHeight="23.0" prefWidth="481.0" text="2020_Java课程设计专业程序：学生选课系统">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                        <AnchorPane fx:id="registPanel" layoutX="1215.0" layoutY="250.0" prefHeight="780.0" prefWidth="510.0" visible="false">
+                            <children>
+                                <TextField fx:id="registName" layoutX="180.0" layoutY="338.0" prefHeight="36.0" prefWidth="286.0" promptText="你的真实姓名" />
+                                <Label layoutX="92.0" layoutY="348.0" text="姓名" />
+                                <TextField fx:id="registP" layoutX="182.0" layoutY="402.0" prefHeight="36.0" prefWidth="285.0" promptText="你的专业" />
+                                <Label layoutX="92.0" layoutY="408.0" text="专业" />
+                                <Label layoutX="30.0" layoutY="557.0" text="请设置登录密码：" />
+                                <Label layoutX="30.0" layoutY="633.0" text="再次确认密码：" />
+                                <TextField fx:id="registId" layoutX="180.0" layoutY="241.0" prefHeight="36.0" prefWidth="286.0" promptText="学号为9位阿拉伯数字" />
+                                <Label layoutX="89.0" layoutY="297.0" text="性别" />
+                                <Label layoutX="88.0" layoutY="247.0" text="学号" />
+                                <CheckBox id="sex" fx:id="man" layoutX="181.0" layoutY="295.0" mnemonicParsing="false"  selected="true" text="男" />
+                                <CheckBox id="sex" fx:id="woman" layoutX="290.0" layoutY="295.0" mnemonicParsing="false"  text="女" />
+                                <Button fx:id="registSure" layoutX="176.0" layoutY="738.0" mnemonicParsing="false"  prefHeight="42.0" prefWidth="187.0" text="✔" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                                <PasswordField fx:id="registPwdAgain" layoutX="182.0" layoutY="627.0" prefHeight="36.0" prefWidth="287.0" />
+                                <PasswordField fx:id="registPwd" layoutX="182.0" layoutY="551.0" prefHeight="36.0" prefWidth="286.0" />
+                                <Label alignment="CENTER" blendMode="DARKEN" cache="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="true" prefHeight="77.0" prefWidth="279.0" text="用户注册" textAlignment="CENTER" underline="true" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="KaiTi" size="61.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="TEXT" />
+                                    </cursor>
+                                    <effect>
+                                        <Reflection />
+                                    </effect>
+                                </Label>
+                                <Separator layoutX="143.0" layoutY="476.0" prefHeight="22.0" prefWidth="381.0" AnchorPane.rightAnchor="0.0" />
+                                <Label layoutX="14.0" layoutY="185.0" text="[1]设置基础信息" AnchorPane.leftAnchor="0.0" />
+                                <Label layoutX="14.0" layoutY="475.0" text="[2]设置登录信息" AnchorPane.leftAnchor="0.0" />
+                                <Separator layoutX="146.0" layoutY="186.0" prefHeight="24.0" prefWidth="378.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                        <Button fx:id="close" layoutX="1788.0" layoutY="400.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="160.0" text="关  闭" AnchorPane.rightAnchor="0.0" />
+                        <Button fx:id="regist" layoutX="1758.0" layoutY="300.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="160.0" text=" 注  册" AnchorPane.rightAnchor="0.0" />
+                        <Button fx:id="LOGIN" layoutX="1215.0" layoutY="250.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="160.0" text="登  录" AnchorPane.rightAnchor="0.0" />
+                        <Button fx:id="other" layoutX="1860.0" layoutY="350.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="160.0" text="关  于" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,156 @@
+#showAll{
+    -fx-background-radius: 20 0 0 20;
+    -fx-border-radius: 20 0 0 20;
+    -fx-text-fill: #fff;
+    -fx-background-color: #708090;
+}
+#showAll:hover{
+    -fx-background-color: #7B68EE;
+    -fx-effect:dropshadow(three-pass-box, #7B68EE,20.0,0.5,0,0);
+}
+
+#showMy{
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: #fff;
+    -fx-background-color: #708090;
+}
+#showMy:hover{
+    -fx-background-color: #7B68EE;
+    -fx-effect:dropshadow(three-pass-box, #7B68EE,20.0,0.2,0,0);
+}
+
+#chioseCouse{
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: #fff;
+    -fx-background-color: #708090;
+}
+#chioseCouse:hover{
+    -fx-background-color: #7B68EE;
+    -fx-effect:dropshadow(three-pass-box, #7B68EE,20.0,0.2,0,0);
+}
+
+#el{
+    -fx-background-radius: 0 20 20 0;
+    -fx-border-radius: 0 20 20 0;
+    -fx-text-fill: #fff;
+    -fx-background-color: #708090;
+}
+#el:hover{
+    -fx-background-color: #F08080;
+    -fx-effect:dropshadow(three-pass-box, #F08080,20.0,0.2,0,0);
+}
+.list-cell{
+    -fx-text-fill: #292e34;
+    -fx-background-color: #F5F5DC;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#couseList{
+    -fx-background-color: #F5F5DC;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, #8FBC8F,20.0,0.5,0,0);
+}
+.list-cell:hover{
+    -fx-text-fill: #fff;
+    -fx-background-color:#3CB371;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, #3CB371,20.0,0.2,0,0);
+}
+#newMsg{
+    -fx-text-fill: #fff;
+    -fx-background-color:#3CB371;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+}
+#newMsg:hover{
+    -fx-effect:dropshadow(three-pass-box, #1E90FF,30.0,0.1,0,0);
+    -fx-background-color: #4682B4;
+}
+#waitChose{
+    -fx-background-color: #708090;
+    -fx-mark-color: #CD5C5C;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 20 0 0 0;
+    -fx-border-radius: 20 0 0 0;
+}
+#waitChose:hover{
+    -fx-background-color: #F08080;
+    -fx-mark-color: #708090;
+    -fx-text-fill: #fff;
+    -fx-effect:dropshadow(three-pass-box, #F08080,20.0,0.1,0,0);
+}
+#waitChose .context-menu{
+    -fx-min-width: 250px;
+    -fx-background-color: #FFFAFA;
+    -fx-background-radius: 0 0 20 20;
+    -fx-border-radius: 0 0 20 20;
+}
+#waitChose .menu-item:focused{
+    -fx-background-color: #3CB371;
+    -fx-text-fill: #fff;
+    -fx-effect:dropshadow(three-pass-box, #3CB371,20.0,0.1,0,0);
+}
+
+#chose{
+    -fx-background-color: #708090;
+    -fx-background-radius: 0 20 0 0;
+    -fx-border-radius: 0 20 0 0;
+}
+#chose:hover{
+    -fx-background-color: #7B68EE;
+    -fx-effect:dropshadow(three-pass-box, #7B68EE,20.0,0.1,0,0);
+    -fx-text-fill: #fff;
+}
+#titlePanel{
+    -fx-background-color: #F0FFFF;
+    -fx-effect: dropshadow(three-pass-box, #7B68EE,20.0,0.1,0,0);
+}
+#listbox{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: linear-gradient(to left, #F5F5DC , #FFDEAD);
+    -fx-effect: dropshadow(three-pass-box, #EEE8AA,20.0,0.1,0,0);
+}
+#msgLabel{
+    -fx-background-color: #D4F2E7;
+}
+#msgLabel:hover{
+    -fx-background-color: #B0E0E6;
+    -fx-effect:dropshadow(three-pass-box, #B0E0E6,20.0,0.5,0,0);
+    -fx-font-size: 25px;
+}
+#allMsg{
+    -fx-background-color: #B0E0E6;
+    -fx-effect:dropshadow(three-pass-box, #B0E0E6,20.0,0.5,0,0);
+}
+#chioseLabel{
+    -fx-background-color: #B0E0E6;
+    -fx-effect:dropshadow(three-pass-box, #B0E0E6,20.0,0.5,0,0);
+}
+#closed{
+    -fx-background-color: #fff;
+    -fx-text-fill: #CD5C5C;
+    -fx-background-radius:0;
+    -fx-border-radius: 0;
+}
+#closed:hover{
+    -fx-background-color: #CD5C5C;
+    -fx-text-fill: #fff;
+    -fx-effect:dropshadow(three-pass-box, #CD5C5C,5.0,0.5,0,0);
+}
+
+#heid{
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+#heid:hover{
+    -fx-background-color: #B0C4DE;
+    -fx-text-fill: #000;
+    -fx-effect:dropshadow(three-pass-box, #B0C4DE,5.0,0.5,0,0);
+}

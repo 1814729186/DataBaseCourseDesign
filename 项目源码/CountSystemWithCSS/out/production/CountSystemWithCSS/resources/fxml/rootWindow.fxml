@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="990" prefWidth="1800" styleClass="dev-fx-body-user-window" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="launch.Controller">
+    <children>
+        <VBox fx:id="window" styleClass="dev-fx-window" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <AnchorPane prefHeight="30">
+                    <children>
+                        <Button fx:id="minWindow" mnemonicParsing="false" styleClass="dev-fx-window-min" text="⚪" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="0.0">
+                            <tooltip>
+                                <Tooltip text="min" />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="closeWindow" mnemonicParsing="false" styleClass="dev-fx-window-close" text="x" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <tooltip>
+                                <Tooltip text="close" />
+                            </tooltip>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            <AnchorPane prefHeight="960.0" prefWidth="1800.0">
+               <children>
+                  <AnchorPane layoutX="50.0" layoutY="42.0" minHeight="890.0" prefHeight="890.0" prefWidth="1700.0" styleClass="dev-fx-scheme-white" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <AnchorPane fx:id="contentAnchorPane" layoutX="14.0" layoutY="14.0" prefHeight="750.0" prefWidth="1360.0" styleClass="dev-fx-scheme-black" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
+                           <children>
+                              <BorderPane fx:id="staffInfoBorderPane" prefHeight="750.0" prefWidth="1360.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <TableView fx:id="staffInfoTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TextField fx:id="staffInfoSearchField" />
+                                          <ChoiceBox fx:id="staffInfoSearchChoiceBox" prefWidth="150.0" />
+                                          <Button fx:id="staffInfoSearchButton" mnemonicParsing="false" text="查询" />
+                                          <Button fx:id="staffInfoAlterButton" mnemonicParsing="false" text="修改信息" />
+                                          <Button fx:id="staffInfoDismissalButton" layoutX="361.0" layoutY="10.0" mnemonicParsing="false" text="解雇员工" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                              <BorderPane fx:id="applyInfoBorderPane" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <TableView fx:id="applyInfoTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="applyTable_applyButton" mnemonicParsing="false" text="通过申请" />
+                                          <Button fx:id="applyTable_rejectButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="拒绝申请" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                              <BorderPane fx:id="cmdBorderPane" layoutX="30.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="executeButton" mnemonicParsing="false" text="执行" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                                 <left>
+                                    <TextArea fx:id="codeTextArea" prefHeight="200.0" prefWidth="690.0" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <TextArea fx:id="resultTextArea" prefHeight="200.0" prefWidth="690.0" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <BorderPane fx:id="saleInfoBorderPane" layoutX="30.0" layoutY="30.0" prefHeight="750.0" prefWidth="1360.0" visible="false">
+                                 <center>
+                                    <TableView fx:id="saleInfoTableView" maxHeight="610.0" prefHeight="610.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER" />
+                                 </center>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="saleorderButton" mnemonicParsing="false" text="详情" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                              <BorderPane fx:id="purchaseOrderBorderPane" layoutX="40.0" layoutY="40.0" prefHeight="750.0" prefWidth="1360.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <TableView fx:id="purchaseOrderTableView" maxHeight="610.0" prefHeight="610.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane fx:id="goodsSoldInfoBorderPane" layoutX="30.0" layoutY="30.0" prefHeight="750.0" prefWidth="1360.0" visible="false">
+                                 <center>
+                                    <TableView fx:id="goodsSoldInfoTableView" maxHeight="610.0" prefHeight="610.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane fx:id="vipCardInfoBorderPane" layoutX="40.0" layoutY="40.0" prefHeight="750.0" prefWidth="1360.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <TableView fx:id="vipCardInfoTableView" maxHeight="610.0" prefHeight="610.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane fx:id="goodsInfoBorderPane" layoutX="30.0" layoutY="30.0" prefHeight="750.0" prefWidth="1360.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <TableView fx:id="goodsInfoTableView" maxHeight="610.0" prefHeight="610.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER" />
+                                 </center>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="goods_info_alterButton" mnemonicParsing="false" text="修改" />
+                                          <TextField fx:id="goods_info_searchField" />
+                                          <ChoiceBox fx:id="goods_info_searchChoiceBox" prefWidth="150.0" />
+                                          <Button fx:id="goods_info_searchButton" mnemonicParsing="false" text="查询" />
+                                          <Button fx:id="goods_info_deleteButton" layoutX="361.0" layoutY="10.0" mnemonicParsing="false" text="删除" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                              <BorderPane fx:id="statisticInfoBorderPane" layoutX="30.0" layoutY="30.0" prefHeight="750.0" prefWidth="1360.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <AnchorPane prefHeight="355.0" prefWidth="695.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="118.0" prefWidth="250.0" text="日销售额" textAlignment="CENTER" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="0.0" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="118.0" prefWidth="250.0" text="周销售额" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="118.0" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="118.0" prefWidth="250.0" text="月销售额" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="236.0" />
+                                                <Label fx:id="amountOfDay" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="10.0" prefHeight="118.0" prefWidth="250.0" styleClass="dev-fx-amount-style1" textAlignment="CENTER" AnchorPane.leftAnchor="347.0" AnchorPane.topAnchor="0.0" />
+                                                <Label fx:id="amountOfWeek" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="128.0" prefHeight="118.0" prefWidth="250.0" styleClass="dev-fx-amount-style1" AnchorPane.leftAnchor="347.0" AnchorPane.topAnchor="118.0" />
+                                                <Label fx:id="amountOfYear" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="246.0" prefHeight="118.0" prefWidth="250.0" styleClass="dev-fx-amount-style1" AnchorPane.leftAnchor="347.0" AnchorPane.topAnchor="236.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="lineAnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="355.0" prefWidth="695.0" AnchorPane.leftAnchor="695.0" AnchorPane.topAnchor="0.0" />
+                                          <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="355.0" prefWidth="1390.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="355.0">
+                                             <children>
+                                                <PieChart />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </center></BorderPane>
+                              <BorderPane fx:id="saveDiskInfoBorderPane" layoutX="30.0" layoutY="30.0" prefHeight="750.0" prefWidth="1360.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <center>
+                                    <TableView fx:id="saveDiskInfoTableView" maxHeight="610.0" prefHeight="610.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children></AnchorPane>
+                        <Button fx:id="stuffButton" layoutX="90.0" layoutY="140.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" rotate="45.0" styleClass="dev-fx-radius-button-staff" />
+                        <Button fx:id="dataButton" layoutX="40.0" layoutY="90.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" rotate="45.0" styleClass="dev-fx-radius-button-data" />
+                        <Button fx:id="listButton" layoutX="90.0" layoutY="40.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" rotate="45.0" styleClass="dev-fx-radius-button-list" />
+                        <Button fx:id="cmdButton" layoutX="140.0" layoutY="90.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" rotate="45.0" styleClass="dev-fx-radius-button-cmd" />
+                        <Label layoutX="112.0" layoutY="112.0" prefHeight="15.0" prefWidth="15.0" styleClass="dev-fx-radius-button-center" />
+                        <Label mnemonicParsing="true" prefHeight="80.0" prefWidth="600.0" styleClass="dev-fx-title-style1" text="超 市 收 银 系 统" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="YouYuan" size="40.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane fx:id="containButtonAnchorPane" layoutX="20.0" layoutY="230.0" prefHeight="640.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane fx:id="stuffAnchorPane" prefHeight="640.0" prefWidth="200.0" styleClass="dev-fx-scheme-black" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                                 <children>
+                                    <VBox prefWidth="200.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                       <children>
+                                          <Button fx:id="listButton_staffArrange" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="员工账号管理" textAlignment="CENTER" />
+                                          <Button fx:id="listButton_applyInfo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="账号申请列表" textAlignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="dataAnchorPane" prefHeight="640.0" prefWidth="200.0" styleClass="dev-fx-scheme-black" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                                 <children>
+                                    <VBox prefWidth="200.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                       <children>
+                                          <Button fx:id="listButton_SaleInfo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="收银表单一览" textAlignment="CENTER" />
+                                          <Button fx:id="listButton_purchaseOrder" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="进货账单一览" textAlignment="CENTER" />
+                                          <Button fx:id="listButton_goodsSoldInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="72.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="单一商品销售情况" textAlignment="CENTER" />
+                                          <Button fx:id="listButton_vipCardInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="134.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="会员卡信息" textAlignment="CENTER" />
+                                          <Button fx:id="listButton_goofdInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="196.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="超市库存信息" textAlignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="listAnchorPane" prefHeight="640.0" prefWidth="200.0" styleClass="dev-fx-scheme-black" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                                 <children>
+                                    <VBox prefWidth="200.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                       <children>
+                                          <Button fx:id="listButton_statisticInfo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="营收报表" textAlignment="CENTER" />
+                                          <Button fx:id="listButton_saveDiskInfo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="存盘数据一览" textAlignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="cmdAnchorPane" prefHeight="640.0" prefWidth="200.0" styleClass="dev-fx-scheme-black" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                                 <children>
+                                    <VBox prefWidth="200.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                       <children>
+                                          <Button fx:id="listButton_cmdButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" styleClass="dev-fx-list-button" text="数据库控制台" textAlignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="updateButton" mnemonicParsing="false" styleClass="dev-fx-update-button" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="80.0" />
+                        <ImageView fx:id="headImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="dev-fx-headImage" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="quitButton" mnemonicParsing="false" text="退出" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

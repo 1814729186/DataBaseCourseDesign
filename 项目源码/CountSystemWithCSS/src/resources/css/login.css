@@ -1,0 +1,9 @@
+.dev-fx-body {
+    -fx-background-image: url("/resources/images/login.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;/*不平铺*/
+    -fx-background-size: cover;/*铺满*/
+
+    -fx-pref-width: 960;
+    -fx-pref-height: 540;
+}

@@ -1,0 +1,206 @@
+.dev-fx-window {
+    -fx-background-color: #00000000;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 30;
+}
+
+.dev-fx-window-min {
+    -fx-background-color: #00000000;
+    -fx-font-size: 18;
+    -fx-font-family: "Fira Code";
+    -fx-pref-width: 55;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
+
+.dev-fx-window-min:hover {
+    -fx-background-color: #4a8fa3;
+    -fx-text-fill: white; /* 字体颜色 */
+}
+
+.dev-fx-window-close {
+    -fx-background-color: #00000000;
+    -fx-font-size: 18;
+    -fx-font-family: "Fira Code";
+    -fx-pref-width: 55;
+    -fx-border-radius: 10px;   /*圆角设计*/
+    -fx-border-width: 0;
+
+}
+
+.dev-fx-window-close:hover {
+    -fx-background-color: #e3404b;
+    -fx-text-fill: white; /* 字体颜色 */
+}
+
+.dev-fx-textField-input{
+    -fx-background-color: white;
+    -fx-opacity:0.5;
+    -fx-pref-height: 30;
+    -fx-pref-width: 200;
+    -fx-alignment: center;      /*组件居中*/
+    -fx-text-alignment: center; /*文字居中*/
+    -fx-font-size: 15;          /*文字大小*/
+    -fx-progress-color: white;
+    -fx-text-fill: black;        /*填充字体颜色*/
+    -fx-transition:1s;
+}
+.dev-fx-textField-input:hover{
+    -fx-pref-width: 220;
+    -fx-pref-height: 32;
+}
+/*登录界面标签设定*/
+.dev-fx-label-login{
+    -fx-pref-width: 80;
+    -fx-font-size: 15;
+    -fx-text-fill: #3d2c2c;
+    -fx-text-alignment: center;
+}
+/*登录界面button */
+.dev-fx-button_login{
+    -fx-pref-height: 30;
+    -fx-pref-width: 60;
+    -fx-text-alignment: right;
+    -fx-text-fill: white;
+    -fx-background-color: #5a5656;
+    -fx-opacity: 0.5;
+}
+.dev-fx-button_login:hover{
+    -fx-pref-width: 66;
+    -fx-pref-height: 33;
+    -fx-background-color: #1d1d1d;
+    -fx-opacity: 1;
+}
+/*标题字体信息*/
+.dev-fx-title-login{
+    -fx-font-size: 30;
+
+}
+/*checkbox*/
+.dev-fx-checkbox-login{
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+.dev-fx-body-user-window {
+    -fx-background-image: url("/resources/images/rootWindowBackground.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;/*不平铺*/
+    -fx-background-size: cover;/*铺满*/
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-pref-width: 1800;
+    -fx-pref-height: 990;
+}
+.dev-fx-fill{
+    -fx-background-color: rgba(255,255,255,0.7);
+}
+.dev-fx-fill-Accordion{
+    -fx-background-color: rgba(50,50,50,1);
+    -fx-pref-height: 200;
+}
+.dev-fx-fill-Accordion-white{
+    -fx-background-color: rgba(220,220,220,0.9);
+}
+.dev-fx-scheme-white{
+    -fx-background-color: rgba(255,255,255,0.7);
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.dev-fx-scheme-black{
+    -fx-background-color: rgba(240,240,240,1);
+    -fx-border-color: black;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+/*店长界面菜单栏按钮信息*/
+/*员工信息按钮*/
+.dev-fx-radius-button-staff{
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+/*超市数据按钮*/
+.dev-fx-radius-button-data{
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+/*营收报表*/
+.dev-fx-radius-button-list{
+    -fx-background-color: green;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+/*数据库控制台*/
+.dev-fx-radius-button-cmd{
+    -fx-background-color: orange;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.dev-fx-radius-button-center{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+/*店长界面下拉菜单button*/
+.dev-fx-list-button{
+    -fx-text-fill: rgba(0,0,0,1);
+    -fx-text-alignment: center;
+    -fx-background-color: white;
+    -fx-border-color: rgba(150,150,150,1);
+
+}
+/*button */
+.dev-fx-button-scheme-grey{
+    -fx-text-fill: white;
+    -fx-background-color: #5a5656;
+}
+.dev-fx-button-scheme-grey:hover{
+    -fx-background-color: #7d5858;
+}
+
+/*刷新按钮*/
+.dev-fx-update-button{
+    -fx-pref-width:30;
+    -fx-pref-height:30;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-image: url("/resources/images/updateButton.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;/*不平铺*/
+    -fx-background-size: cover;/*铺满*/
+
+}
+/*头像信息*/
+.dev-fx-headImage{
+    -fx-pref-width:100;
+    -fx-pref-height:100;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-image: url("/resources/images/staff.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;/*不平铺*/
+    -fx-background-size: cover;/*铺满*/
+}
+/*字体信息*/
+@font-face {
+    src:url("/resources/fonts/AaELuanShi-2.ttf");
+}
+
+/*标题字体信息*/
+.dev-fx-title-style1{
+    -fx-font-family: "Aa鹅卵石";
+}
+/*销售额显示*/
+.dev-fx-amount-style1{
+    -fx-text-fill: #3ac1bd;
+    -fx-text-alignment: center;
+    -fx-font-size: 30;
+
+}

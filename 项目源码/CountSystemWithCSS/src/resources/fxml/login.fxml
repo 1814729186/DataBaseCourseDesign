@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540" prefWidth="960" styleClass="dev-fx-body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="launch.Controller">
+   <children>
+       <VBox fx:id="window" styleClass="dev-fx-window" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <AnchorPane prefHeight="30">
+                   <children>
+                       <Button fx:id="minWindow" mnemonicParsing="false" styleClass="dev-fx-window-min" text="⚪" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="0.0">
+                           <tooltip>
+                               <Tooltip text="min" />
+                           </tooltip>
+                       </Button>
+                       <Button fx:id="closeWindow" mnemonicParsing="false" styleClass="dev-fx-window-close" text="x" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tooltip>
+                               <Tooltip text="close" />
+                           </tooltip>
+                       </Button>
+                   </children>
+               </AnchorPane>
+            <AnchorPane fx:id="pane" prefHeight="510.0" prefWidth="960.0">
+               <children>
+                  <VBox fx:id="message_vbox" layoutX="661.0" layoutY="146.0" prefHeight="300.0" prefWidth="400.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="100.0" prefWidth="400.0" styleClass="dev-fx-title-login" text="超市收银系统" textAlignment="RIGHT" textOverrun="CLIP" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="50.0" />
+                           </padding>
+                           <font>
+                              <Font size="25.0" />
+                           </font></Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0" spacing="10.0">
+                           <children>
+                              <Label styleClass="dev-fx-label-login" text="User Name" />
+                              <TextField fx:id="userTextField" styleClass="dev-fx-textField-input" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="300.0" spacing="10.0">
+                           <children>
+                              <Label styleClass="dev-fx-label-login" text="Password" />
+                              <PasswordField fx:id="passwordField" styleClass="dev-fx-textField-input" />
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="remCheckBox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="dev-fx-checkbox-login" text="记住密码" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="250.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="300.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="loginInButton" mnemonicParsing="false" styleClass="dev-fx-button_login" text="登录" />
+                              <Button fx:id="loginUpButton" mnemonicParsing="false" styleClass="dev-fx-button_login" text="注册" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+           </children>
+       </VBox>
+   </children>
+</AnchorPane>

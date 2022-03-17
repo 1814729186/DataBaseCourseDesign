@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="window" prefHeight="150.0" prefWidth="300.0" styleClass="dev-fx-button_alertDialog" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="launch.Controller">
+    <children>
+        <AnchorPane prefHeight="30">
+            <children>
+            <Label fx:id="titleLabel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="closeWindow" mnemonicParsing="false" styleClass="dev-fx-window-close" text="x" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tooltip>
+                        <Tooltip text="close" />
+                    </tooltip>
+                </Button>
+            </children>
+        </AnchorPane>
+      <VBox fx:id="items" prefHeight="200.0" prefWidth="100.0" />
+    </children>
+</VBox>
